@@ -47,17 +47,6 @@ def search_dict(code):
             return morse_dict[i][1]
         i += 1
 
-def space_remove(code):
-    compteur = 0
-    code2 = strToTab(code)
-    for i in code2:
-        if i == " ":
-            compteur += 1
-        if compteur == 2:
-            code2.pop(code2.index(i))
-            compteur = 0
-
-    return "".join(code2)
 
 def decodeMorse(code):
     tab = strToTab(code)
